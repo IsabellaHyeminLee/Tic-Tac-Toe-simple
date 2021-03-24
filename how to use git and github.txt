@@ -1,0 +1,62 @@
+basic way to start*******
+
+0. make a folder and put a file that you want to push to github 
+00. in the command line you need to go to the folder before start it 
+1. git init 
+2. git status
+3. git add .
+4. git status
+5. git commit -m "what ever you want to commit"
+
+
+*important
+6. open gitkraken and click open a repo
+7. click open a repository
+8. find the folder that you typed git init before and enter
+
+---------
+extra(how to change your file and commit it)
+- if you change your file which place in the folder gitkraken 
+show you there is a change on the top of the line
+- then go to command line and 'git status' 
+- you will see your file color has changed as red also it's written 
+as modified.   
+
+- go back to the gitkraken and click //wip
+- that will show you unstaged files 
+- you can visually click the file and trans to staged file
+
+- and now if you go back to the command line and type 'git status'
+- you will see your file color has changed as green. still in modified
+
+-to commit it you can use commit message in gitkraken after enter your commit message
+
+- if you type 'git status' on the command line 
+- you will see 'nothing to commit, working tree clean'
+
+----------------------------
+extra2(how to go back to your previous file(travel back in time)
+- when you click a commit message in gitkraken 
+- you will see 'commit: e21123(random)' on the right side that lets you 
+  go back to the other version of files in command line
+- so copy the commit and go to command line and type 
+'git checkout (and paste(right click on your mouse) what you copied)'
+- if you check on your file you will see your file came back to how it was
+- come back to gitkraken and you can see there is 'HEAD' and that means
+where we are currently at
+- now we are not in the most updated version
+- if you do 'git log' on your command line you can see what happened
+- if you enter 'git checkout master' that should take you to the master commit
+that means it will take you forward in time
+- and you will see you sure are in gitkraken also in the file
+
+---------------------------------------
+extra3(how to add other file in the same master)
+- you should put the file in the same folder and follow 3->4->5
+- you will see the update of your file in the folder in gitkraken
+
+--------------------------------------------
+9. go back to the command line and type ' git remote add origin (url)'
+10. 'git remote -v' to check whether we have remote already or not. 
+11. 'git push origin master'
+12. 'git pull origin master'
