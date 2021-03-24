@@ -71,7 +71,7 @@ def check_if_game_over():
 
     
 
-
+# check if win
 def check_if_win():
     global game_still_going
     
@@ -143,7 +143,7 @@ def check_diagonals():
               
 
 
-
+# check if tie
 def check_if_tie():
     global game_still_going
 
@@ -153,7 +153,7 @@ def check_if_tie():
     return
 
 
-
+# filp player
 def filp_player():
     global current_player
     if current_player == 'X':
@@ -162,9 +162,9 @@ def filp_player():
         current_player = 'X'    
     return
 
-# check if win
-# check if tie
-# filp player
-# result of the game 
+
+
+
+
 
 play_game()
